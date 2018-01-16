@@ -1,0 +1,110 @@
+[05/Jan/2018 03:20:51] "GET /movie_search/index HTTP/1.1" 301 0
+[05/Jan/2018 03:20:51] "GET /movie_search/index/ HTTP/1.1" 200 2811
+[05/Jan/2018 03:20:52] "GET /static/img/bg.png HTTP/1.1" 404 91
+[05/Jan/2018 03:20:53] "GET /favicon.ico HTTP/1.1" 404 85
+Performing system checks...
+
+System check identified no issues (0 silenced).
+
+You have 14 unapplied migration(s). Your project may not work properly until you apply the migrations for app(s): admin, auth, contenttypes, sessions.
+Run 'python manage.py migrate' to apply them.
+January 05, 2018 - 03:20:07
+Django version 2.0.1, using settings 'django_rocky.settings'
+Starting development server at http://0.0.0.0:9090/
+Quit the server with CONTROL-C.
+[05/Jan/2018 03:21:40] "GET /movie_search/index/ HTTP/1.1" 200 2811
+[05/Jan/2018 03:21:40] "GET /static/img/bg.png HTTP/1.1" 404 91
+[05/Jan/2018 03:21:44] "POST /movie_search/search_result/ HTTP/1.1" 200 2276
+[05/Jan/2018 03:21:47] "GET /movie_search/search_result/ HTTP/1.1" 200 2811
+[05/Jan/2018 03:21:50] "GET /movie_search/search_result/ HTTP/1.1" 200 2811
+[05/Jan/2018 03:21:53] "GET /static/img/bg.png HTTP/1.1" 404 91
+[05/Jan/2018 03:21:59] "POST /movie_search/search_result/ HTTP/1.1" 200 51798
+[05/Jan/2018 03:22:04] "GET /movie_search/search_result/ HTTP/1.1" 200 2811
+[05/Jan/2018 03:22:07] "GET /movie_search%E3%80%81 HTTP/1.1" 404 89
+[05/Jan/2018 03:22:11] "GET /movie_search/search_result/ HTTP/1.1" 200 2811
+[05/Jan/2018 03:22:12] "GET /static/img/bg.png HTTP/1.1" 404 91
+[05/Jan/2018 03:22:14] "GET /movie_search/i HTTP/1.1" 404 88
+[05/Jan/2018 03:22:21] "GET /movie_search/index/ HTTP/1.1" 200 2811
+[05/Jan/2018 03:22:21] "GET /static/img/bg.png HTTP/1.1" 404 91
+[05/Jan/2018 03:23:33] "GET /movie_search/index/?nsukey=nZF1eHmjWEs1jbJF6%2FVjo6kza3BxoBzl9ix4nZjYy2qO7uEawD6vV3cwKLC8TU23gmdDQKmgZKt6lJLQZZ9EFGpycRyWjEHbYu6aI0b47yU43z6Kt9J%2FXWHs6V2Avd2PuUvrL9R4Br3uI0yIkiYUp%2B5GmlIETh%2BAh3XOQb3FGU0J%2BmpQO2Fbozn9QN8O1%2BHyCU0aBYvimeSs9njvHztVfw%3D%3D HTTP/1.1" 200 2811
+[05/Jan/2018 03:23:34] "GET /movie_search/index/?nsukey=nZF1eHmjWEs1jbJF6%2FVjo6kza3BxoBzl9ix4nZjYy2qO7uEawD6vV3cwKLC8TU23gmdDQKmgZKt6lJLQZZ9EFGpycRyWjEHbYu6aI0b47yU43z6Kt9J%2FXWHs6V2Avd2PuUvrL9R4Br3uI0yIkiYUp%2B5GmlIETh%2BAh3XOQb3FGU0J%2BmpQO2Fbozn9QN8O1%2BHyCU0aBYvimeSs9njvHztVfw%3D%3D HTTP/1.1" 200 2811
+[05/Jan/2018 03:23:35] "GET /movie_search/index/?nsukey=nZF1eHmjWEs1jbJF6%2FVjo6kza3BxoBzl9ix4nZjYy2qO7uEawD6vV3cwKLC8TU23gmdDQKmgZKt6lJLQZZ9EFGpycRyWjEHbYu6aI0b47yU43z6Kt9J%2FXWHs6V2Avd2PuUvrL9R4Br3uI0yIkiYUp%2B5GmlIETh%2BAh3XOQb3FGU0J%2BmpQO2Fbozn9QN8O1%2BHyCU0aBYvimeSs9njvHztVfw%3D%3D HTTP/1.1" 200 2811
+[05/Jan/2018 03:23:36] "GET /static/img/bg.png HTTP/1.1" 404 91
+[05/Jan/2018 03:24:27] "GET /movie_search/index HTTP/1.1" 301 0
+[05/Jan/2018 03:24:28] "GET /movie_search/index/ HTTP/1.1" 200 2811
+[05/Jan/2018 03:24:50] "GET /favicon.ico HTTP/1.1" 404 85
+[05/Jan/2018 03:24:52] "GET /movie_search/index/ HTTP/1.1" 200 2811
+[05/Jan/2018 03:25:05] "POST /movie_search/search_result/ HTTP/1.1" 200 2281
+[05/Jan/2018 03:25:16] "POST /movie_search/search_result/ HTTP/1.1" 200 7563
+[05/Jan/2018 03:25:21] "POST /movie_search/search_result/ HTTP/1.1" 200 4193
+[05/Jan/2018 03:30:44] "POST /movie_search/search_result/ HTTP/1.1" 200 9692
+[05/Jan/2018 03:31:22] "POST /movie_search/search_result/ HTTP/1.1" 200 2284
+----------------------------------------
+Exception happened during processing of request from ('59.50.36.182', 56514)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/socketserver.py", line 639, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/local/lib/python3.6/socketserver.py", line 361, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/local/lib/python3.6/socketserver.py", line 696, in __init__
+    self.handle()
+  File "/usr/local/lib/python3.6/site-packages/django/core/servers/basehttp.py", line 139, in handle
+    self.raw_requestline = self.rfile.readline(65537)
+  File "/usr/local/lib/python3.6/socket.py", line 586, in readinto
+    return self._sock.recv_into(b)
+ConnectionResetError: [Errno 104] Connection reset by peer
+----------------------------------------
+[05/Jan/2018 03:31:41] "GET /movie_search/index/ HTTP/1.1" 200 2811
+[05/Jan/2018 03:31:42] "GET /static/img/bg.png HTTP/1.1" 404 91
+[05/Jan/2018 03:39:36] "POST /movie_search/search_result/ HTTP/1.1" 200 7563
+[05/Jan/2018 03:40:31] "GET /movie_search/search_result/ HTTP/1.1" 200 2811
+[05/Jan/2018 03:40:32] "GET /static/img/bg.png HTTP/1.1" 404 91
+[05/Jan/2018 03:40:50] "POST /movie_search/search_result/ HTTP/1.1" 200 2284
+[05/Jan/2018 03:40:58] "POST /movie_search/search_result/ HTTP/1.1" 200 60578
+Performing system checks...
+
+System check identified no issues (0 silenced).
+
+You have 14 unapplied migration(s). Your project may not work properly until you apply the migrations for app(s): admin, auth, contenttypes, sessions.
+Run 'python manage.py migrate' to apply them.
+January 05, 2018 - 03:21:30
+Django version 2.0.1, using settings 'django_rocky.settings'
+Starting development server at http://0.0.0.0:9090/
+Quit the server with CONTROL-C.
+test
+None
+None
+你好
+None
+None
+猫妖传
+美国队长
+美国队长3
+小美好
+吐槽大会
+美国队长
+None
+天下粮仓
+天下
+Traceback (most recent call last):
+  File "manage.py", line 15, in <module>
+    execute_from_command_line(sys.argv)
+  File "/usr/local/lib/python3.6/site-packages/django/core/management/__init__.py", line 371, in execute_from_command_line
+    utility.execute()
+  File "/usr/local/lib/python3.6/site-packages/django/core/management/__init__.py", line 365, in execute
+    self.fetch_command(subcommand).run_from_argv(self.argv)
+  File "/usr/local/lib/python3.6/site-packages/django/core/management/base.py", line 288, in run_from_argv
+    self.execute(*args, **cmd_options)
+  File "/usr/local/lib/python3.6/site-packages/django/core/management/commands/runserver.py", line 62, in execute
+    super().execute(*args, **options)
+  File "/usr/local/lib/python3.6/site-packages/django/core/management/base.py", line 335, in execute
+    output = self.handle(*args, **options)
+  File "/usr/local/lib/python3.6/site-packages/django/core/management/commands/runserver.py", line 71, in handle
+    if not settings.DEBUG and not settings.ALLOWED_HOSTS:
+  File "/usr/local/lib/python3.6/site-packages/django/conf/__init__.py", line 56, in __getattr__
+    self._setup(name)
+  File "/usr/local/lib/python3.6/site-packages/django/conf/__init__.py", line 43, in _setup
+    self._wrapped = Settings(settings_module)
+  File "/usr/local/lib/python3.6/site-packages/django/conf/__init__.py", line 125, in __init__
+    raise ImproperlyConfigured("The SECRET_KEY setting must not be empty.")
+django.core.exceptions.ImproperlyConfigured: The SECRET_KEY setting must not be empty.

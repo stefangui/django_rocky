@@ -1,0 +1,111 @@
+<html><head>
+		<meta charset="utf-8">
+		<title>内部电影搜索</title>		<link href="http://so.ziqiangxuetang.com/static/css/default.css?v=0.9" rel="stylesheet" type="text/css">
+
+
+        	</head>
+	<body>
+
+		<div id="wrap" style="position: relative;">
+
+
+			    <div id="head" style="" class="clearfix">
+        <div class="s_nav" style="">
+                            <a href="" target="_blank" class="s_logo">
+                    <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1515044082929&di=693b80ef0a04f046da7d598e25ddccac&imgtype=0&src=http%3A%2F%2Fgadgetadda.com%2Fwp-content%2Fuploads%2F2014%2F08%2Fgoogle-logo.gif" border="0" id="logo" width="160">
+                </a>
+                    </div>
+        <div class="fl mt45">
+            <form  method="post" action="{% url 'movie_search:search_result' %}" id="search-form">
+                {% csrf_token %}
+                <span class="s_ipt_wr_pre" id="search_input_container">
+                    <input name="search-box" class="s_ipt" value="{{search_title}}" maxlength="100" autocomplete="off" style="">
+                    <input name="click" value="1" type="hidden">
+                </span>
+                <span class="s_btn_wr_pre" style="">
+                    <input type="submit" id="su" value="搜本站" class="s_btn_pre" onmousedown="this.className = 's_btn_pre s_btn_h'" onmouseout="this.className = 's_btn_pre'">
+                </span>
+            </form>
+
+            <ul id="bdcs-search-sug-list" class="bdcs-search-sug-list" style="top: 76px; left: 210px; width: 536px;"></ul>
+
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+			<div id="container" class="clearfix" style="">
+				<div id="aside" class="aside" style="">
+
+
+
+				</div>
+				<div id="center" class="content" style="">
+					<div id="results" class="content-main" style="">
+                                                <span class="support-text-top">为您找到相关结果{{ counts }}个</span>
+
+{% for result in search_result %}
+<div class="result f s0">
+    <h3 class="c-title">
+        <a rpos="" cpos="title" href="{{ result.movie_come_from_url }}" target="_blank">{{ result.movie_title }}</a>
+    </h3>
+    <div>
+                        <div class="c-content">
+                                            <div class="c-abstract">
+                {{ result.movie_content }}
+                                            </div>
+                                            <div class="c-abstract">
+                {{ result.movie_download_url }}
+                                            </div>
+                                                <div>
+                <span class="c-showurl">{{ result.movie_come_from_url }} nocopy noright 2018</span>
+            </div>
+                    </div>
+                    </div>
+</div>
+{% endfor %}
+
+
+					</div>
+				</div>
+                				<div class="extra">
+
+
+
+					<div id="right">
+
+
+
+
+
+
+
+
+
+
+					</div>
+				</div>
+                			</div>
+		</div>
+        <i clear="all"></i>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        </body></html>
